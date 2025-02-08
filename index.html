@@ -9,31 +9,36 @@
  <link rel="stylesheet" href="index.css">
   <body>
      <div class="calculator">
-        <input type="text"><br>
+        <input type="text" id="display"><br>
+           <button class="of" >ON</button>
+           <button class="of" >OFF</button>
            
-            <button > 7</button>
-            <button >8</button>
-            <button >9</button>
-            <button > /</button><br>
-            <button > 4</button>
-            <button >5</button>
-            <button >6</button>
-            <button >*</button><br>
-            <button > 1</button>
-            <button >2</button>
-            <button >3</button>
-            <button > -</button>
+           <button class="m">M+</button>
+           <button class="m">M-</button><br>
+            <button  onclick="addTodisplay('7')"> 7</button>
+            <button onclick="addTodisplay('8')">8</button>
+            <button  onclick="addTodisplay('9')">9</button>
+            <button  onclick="addTodisplay('/')"> /</button><br>
+            <button onclick="addTodisplay('4')" > 4</button>
+            <button  onclick="addTodisplay('5')">5</button>
+            <button  onclick="addTodisplay('6')">6</button>
+            <button onclick="addTodisplay('*')" >*</button><br>
+            <button onclick="addTodisplay('1')" > 1</button>
+            <button onclick="addTodisplay('2')" >2</button>
+            <button  onclick="addTodisplay('3')">3</button>
+            <button onclick="addTodisplay('-')" > -</button>
             <br>
-            <button > 0</button>
-            <button >.</button>
-            <button >C</button>
-            <button > +</button><br>
-            <button  id="ME"> =</button>
+            <button  onclick="addTodisplay('0')"> 0</button>
+            <button  onclick="addTodisplay('.')">.</button>
+            <button  onclick="cleardisplay()">C</button>
+            <button onclick="addTodisplay('+')"> +</button><br>
+            <button  id="ME" onclick="calculate()"> = </button>
            
             
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
